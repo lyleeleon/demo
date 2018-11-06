@@ -76,16 +76,16 @@
 									<ul>
 										<li><a href="user_product_list.html">Overview</a></li>
 										<li><a href="invest_performance.html">Performance</a></li>
-										<li><a href="user_product_list.html">Portfolio</a></li>
+										<li><a href="invest_portfolio.html">Portfolio</a></li>
 										<li><a href="user_product_list.html">Transation</a></li>
 										<li><a href="user_product_list.html">Update</a></li>
 										<li><a href="user_product_list.html">Documents</a></li>
 									</ul>
 								</li>
-								<li class="current">
+								<li>
 									<a href="#">My Profile</a>
 									<ul>
-										<li><a href="#">My Profile</a></li>
+										<li><a href="user_info.html">My Profile</a></li>
 										<li><a href="user_preferences.html">My Preferences</a></li>
 									</ul>
 								</li>
@@ -135,7 +135,7 @@
 				<section class="wrapper style2">
 					<div class="container">
 						<header class="major">
-							<h2>My Profile</h2>
+							<h2>Performance</h2>
 							<!--<p>With a much smaller subtitle hanging out just below it</p>-->
 						</header>
 					</div>
@@ -147,13 +147,22 @@
 						<div class="row">
 							<section class="col-12 col-12-narrower">
 								<div class="inner">
-									<div class="table100 ver5 m-b-110">
+									<h3>Year to date returns</h3>
+									<div>
+										<button class="button min" value=0 onclick="if(this.value==0){this.style='this.value=1}else{ this.value=0; this.style='background-color:grey'}">%</button>
+										<button class="button min" style="background-color:grey" value=0 onclick="if(this.value==0){this.style='this.value=1}else{ this.value=0; this.style='background-color:grey'}">$</button>
+									</div>
+									<div class="table100 ver1 m-b-110">
 										<div class="table100-head">
 											<table>
 												<thead>
 													<tr class="row100 head">
-														<th class="cell100 column1">You can update your profile.</th>
-														
+														<th class="cell100 column6">Name</th>
+														<th class="cell100 column8">Q1</th>
+														<th class="cell100 column8">Q2</th>
+														<th class="cell100 column8">Q3</th>
+														<th class="cell100 column8">Pqrtial Q4</th>
+														<th class="cell100 column8">YTD</th>
 													</tr>
 												</thead>
 											</table>
@@ -163,80 +172,74 @@
 											<table>
 												<tbody>
 													<tr class="row100 body">
-														<td class="cell100 column1" style="width:12%">First Name</td>
-														<td class="cell100 column3"><input size=15></td>
-														<td class="cell100 column1" style="width:12%">Last Name</td>
-														<td class="cell100 column3"><input size=15></td>
-														<td class="cell100 column1" style="width:15%; padding-left:20px">Primary Phone</td>
-														<td class="cell100 column3"><input size=15></td>
-													</tr>
-													<tr class="row100 body">													
-														<td class="cell100 column1" style="width:12%">Address</td>
-														<td class="cell100 column3" colspan=3 style="width:35%"><input size=50></td>
-														<td class="cell100 column1" style="width:15%; padding-left:20px">City</td>
-														<td class="cell100 column3"><input size=12></td>
-																												
+														<td class="cell100 column6"><a href="product_detail_login.html">Austin Apartment</a></td>
+														<td class="cell100 column8">1.1%</td>
+														<td class="cell100 column8">1.7%</td>
+														<td class="cell100 column8">2.0%</td>
+														<td class="cell100 column8">0.6%</td>
+														<td class="cell100 column8">5.8%</td>
 													</tr>
 													<tr class="row100 body">
-														<td class="cell100 column1" style="width:12%">State</td>
-														<td class="cell100 column3" >
-															<select length=10>
-																<option>Alaska</option>
-																<option>Califonia</option>
-																<option>Texas</option>
-															</select>
-														</td>
-														<td class="cell100 column1" style="width:12%">Country</td>
-														<td class="cell100 column3" style="width:8%">
-															<select length=10>
-																<option>China</option>
-																<option>United Kindom</option>
-																<option>United States</option>
-															</select>
-														</td>
-														<td class="cell100 column1" style="width:15%; padding-left:20px">Postal Code</td>
-														<td class="cell100 column3" style="width:6%"><input size="10"></td>
+														<td class="cell100 column6"><a href="product_detail_login.html">Dallas Apartment</a></td>
+														<td class="cell100 column8">3.7%</td>
+														<td class="cell100 column8">4.3%</td>
+														<td class="cell100 column8">3.2%</td>
+														<td class="cell100 column8">0.5%</td>
+														<td class="cell100 column8">12.2%</td>
 													</tr>
-
 												</tbody>
 											</table>
 										</div>
-										
-										<div style="padding-left:500px"><a href="#" class="button small">SAVE</a><div>
 									</div>
-								</div>
-							</section>						
-						</div>
-						
-						
-						<!--<div class="row">
-							<section class="col-6 col-12-narrower">
-								<div class="box post">
-									<a href="#" class="image left"><img src="images/pj3.jpg" alt="" /></a>
-									<div class="inner">
-										<h3>Z Apartment</h3>
-										<p>
-											Value-add project<br>
-											8% Return<br>
-											5 Years	
-										</p>
+					</div>
+				</section>
+				
+				<section class="wrapper style1">
+					<div class="container">
+						<div class="row">
+							<section class="col-12 col-12-narrower">
+								<div class="inner">
+									<h3>Annual Return</h3>
+									<div>
+										<button class="button min" value=0 onclick="if(this.value==0){this.style='this.value=1}else{ this.value=0; this.style='background-color:grey'}">%</button>
+										<button class="button min" style="background-color:grey" value=0 onclick="if(this.value==0){this.style='this.value=1}else{ this.value=0; this.style='background-color:grey'}">$</button>
+									</div>	
+									<div class="table100 ver1 m-b-110">
+										<div class="table100-head">
+											<table>
+												<thead>
+													<tr class="row100 head">
+														<th class="cell100 column6">Name</th>
+														<th class="cell100 column8">2016</th>
+														<th class="cell100 column8">2017</th>
+														<th class="cell100 column8">2018 YTD</th>
+														<th class="cell100 column8">All time</th>
+													</tr>
+												</thead>
+											</table>
+										</div>
+
+										<div class="table100-body js-pscroll">
+											<table>
+												<tbody>
+													<tr class="row100 body">
+														<td class="cell100 column6"><a href="product_detail_login.html">Austin Apartment</a></td>
+														<td class="cell100 column8">-3.6%</td>
+														<td class="cell100 column8">17.3%</td>
+														<td class="cell100 column8">12.0%</td>
+														<td class="cell100 column8">12.4%</td>
+													</tr>
+													<tr class="row100 body">
+														<td class="cell100 column6"><a href="product_detail_login.html">Dallas Apartment</a></td>
+														<td class="cell100 column8">-3.6%</td>
+														<td class="cell100 column8">17.2%</td>
+														<td class="cell100 column8">11.8%</td>
+														<td class="cell100 column8">12.3%</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
 									</div>
-								</div>
-							</section>
-							<section class="col-6 col-12-narrower">
-								<div class="box post">
-									<a href="#" class="image left"><img src="images/pj4.jpg" alt="" /></a>
-									<div class="inner">
-										<h3>A Apartment</h3>
-										<p>
-											Value-add project<br>
-											8% Return<br>
-											5 Years	
-										</p>
-									</div>
-								</div>
-							</section>
-						</div>-->
 					</div>
 				</section>
 

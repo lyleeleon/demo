@@ -76,16 +76,16 @@
 									<ul>
 										<li><a href="user_product_list.html">Overview</a></li>
 										<li><a href="invest_performance.html">Performance</a></li>
-										<li><a href="user_product_list.html">Portfolio</a></li>
+										<li><a href="invest_portfolio.html">Portfolio</a></li>
 										<li><a href="user_product_list.html">Transation</a></li>
 										<li><a href="user_product_list.html">Update</a></li>
 										<li><a href="user_product_list.html">Documents</a></li>
 									</ul>
 								</li>
-								<li class="current">
+								<li>
 									<a href="#">My Profile</a>
 									<ul>
-										<li><a href="#">My Profile</a></li>
+										<li><a href="user_info.html">My Profile</a></li>
 										<li><a href="user_preferences.html">My Preferences</a></li>
 									</ul>
 								</li>
@@ -135,7 +135,7 @@
 				<section class="wrapper style2">
 					<div class="container">
 						<header class="major">
-							<h2>My Profile</h2>
+							<h2>My Portfolio</h2>
 							<!--<p>With a much smaller subtitle hanging out just below it</p>-->
 						</header>
 					</div>
@@ -147,13 +147,20 @@
 						<div class="row">
 							<section class="col-12 col-12-narrower">
 								<div class="inner">
-									<div class="table100 ver5 m-b-110">
+								
+									<div class="table100 ver1 m-b-110">
 										<div class="table100-head">
 											<table>
 												<thead>
 													<tr class="row100 head">
-														<th class="cell100 column1">You can update your profile.</th>
-														
+														<th class="cell100 column6">Name</th>
+														<th class="cell100 column8">Type</th>
+														<th class="cell100 column8">Amount</th>
+														<th class="cell100 column8">Return</th>
+														<th class="cell100 column8">Start Date</th>
+														<th class="cell100 column8">End Date</th>
+														<!--<th class="cell100 column8">Intro</th>
+														<th class="cell100 column8">Contract</th>-->
 													</tr>
 												</thead>
 											</table>
@@ -163,51 +170,67 @@
 											<table>
 												<tbody>
 													<tr class="row100 body">
-														<td class="cell100 column1" style="width:12%">First Name</td>
-														<td class="cell100 column3"><input size=15></td>
-														<td class="cell100 column1" style="width:12%">Last Name</td>
-														<td class="cell100 column3"><input size=15></td>
-														<td class="cell100 column1" style="width:15%; padding-left:20px">Primary Phone</td>
-														<td class="cell100 column3"><input size=15></td>
-													</tr>
-													<tr class="row100 body">													
-														<td class="cell100 column1" style="width:12%">Address</td>
-														<td class="cell100 column3" colspan=3 style="width:35%"><input size=50></td>
-														<td class="cell100 column1" style="width:15%; padding-left:20px">City</td>
-														<td class="cell100 column3"><input size=12></td>
-																												
+														<td class="cell100 column6"><a href="product_detail_login.html">Austin Apartment</a></td>
+														<td class="cell100 column8">Value-add</td>
+														<td class="cell100 column8">$100,000</td>
+														<td class="cell100 column8">8.5%</td>
+														<td class="cell100 column8">01/11/2015</td>
+														<td class="cell100 column8">01/10/2020</td>
+														<!--<td class="cell100 column8">
+															<a href="doc/x_apartment.pptx" download="x_apartment.pptx" class="button min">Download</a>
+														</td>
+														<td class="cell100 column8">
+															<a href="doc/x_apartment.pptx" download="x_apartment.pptx" class="button min">Download</a>
+														</td>-->
 													</tr>
 													<tr class="row100 body">
-														<td class="cell100 column1" style="width:12%">State</td>
-														<td class="cell100 column3" >
-															<select length=10>
-																<option>Alaska</option>
-																<option>Califonia</option>
-																<option>Texas</option>
-															</select>
+														<td class="cell100 column6">Houston Apartment</td>
+														<td class="cell100 column8">Value-add</td>
+														<td class="cell100 column8">$50,000</td>
+														<td class="cell100 column8">8%</td>
+														<td class="cell100 column8">04/10/2016</td>
+														<td class="cell100 column8">04/09/2021</td>
+														<!--<td class="cell100 column8">
+															<a href="doc/x_apartment.pptx" download="x_apartment.pptx" class="button min">Download</a>
 														</td>
-														<td class="cell100 column1" style="width:12%">Country</td>
-														<td class="cell100 column3" style="width:8%">
-															<select length=10>
-																<option>China</option>
-																<option>United Kindom</option>
-																<option>United States</option>
-															</select>
-														</td>
-														<td class="cell100 column1" style="width:15%; padding-left:20px">Postal Code</td>
-														<td class="cell100 column3" style="width:6%"><input size="10"></td>
+														<td class="cell100 column8">
+															<a href="doc/x_apartment.pptx" download="x_apartment.pptx" class="button min">Download</a>
+														</td>-->
 													</tr>
-
+													<tr class="row100 body">
+														<td class="cell100 column6">LA Apartment</td>
+														<td class="cell100 column8">Value-add</td>
+														<td class="cell100 column8">$75,000</td>
+														<td class="cell100 column8">8%</td>
+														<td class="cell100 column8">06/10/2017</td>
+														<td class="cell100 column8">06/09/2022</td>
+														<!--<td class="cell100 column8">
+															<a href="doc/x_apartment.pptx" download="x_apartment.pptx" class="button min">Download</a>
+														</td>
+														<td class="cell100 column8">
+															<a href="doc/x_apartment.pptx" download="x_apartment.pptx" class="button min">Download</a>
+														</td>-->
+													</tr>
+													<tr class="row100 body">
+														<td class="cell100 column6">Dallas Apartment</td>
+														<td class="cell100 column8">Core</td>
+														<td class="cell100 column8">$120,000</td>
+														<td class="cell100 column8">7.5%</td>
+														<td class="cell100 column8">09/10/2018</td>
+														<td class="cell100 column8">09/09/2023</td>
+														<!--<td class="cell100 column8">
+															<a href="doc/x_apartment.pptx" download="x_apartment.pptx" class="button min">Download</a>
+														</td>
+														<td class="cell100 column8">
+															<a href="doc/x_apartment.pptx" download="x_apartment.pptx" class="button min">Download</a>
+														</td>-->
+													</tr>
+												
 												</tbody>
 											</table>
 										</div>
-										
-										<div style="padding-left:500px"><a href="#" class="button small">SAVE</a><div>
 									</div>
-								</div>
-							</section>						
-						</div>
-						
+									
 						
 						<!--<div class="row">
 							<section class="col-6 col-12-narrower">
