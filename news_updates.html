@@ -32,6 +32,51 @@
 	<body class="is-preload">
 		<div id="page-wrapper">
 		
+		<div id="openModal" class="modalDialog">
+				<div>
+					<h2>Updates</h2>
+					<div class="table100 ver1 m-b-110" style="margin-bottom:10px">
+										<div class="table100-head">
+											<table>
+												<thead>
+													<tr class="row100 head">
+														<th class="cell100 column6"><font size=2>Date</font></th>
+														<th class="cell100 column1"><font size=1>Report</font></th>
+														<!--<th class="cell100 column8">Intro</th>
+														<th class="cell100 column8">Contract</th>-->
+													</tr>
+												</thead>
+											</table>
+										</div>
+
+										<div class="table100-body js-pscroll">
+											<table>
+												<tbody>
+													<tr class="row100 body">
+														<td class="cell100 column6">04/03/2018</td>
+														<td class="cell100 column1"><a>Q1 program process report.doc</a></td>
+													</tr>
+													<tr class="row100 body">
+														<td class="cell100 column6">07/03/2018</td>
+														<td class="cell100 column1"><a>Q2 program process report.doc</a></td>
+													</tr>
+													<tr class="row100 body">
+														<td class="cell100 column6">10/03/2018</td>
+														<td class="cell100 column1"><a>Q3 program process report.doc</a></td>
+													</tr>
+													<tr class="row100 body">
+														<td class="cell100 column6"></td>
+														<td class="cell100 column1">
+															<a href="invest_update.html" class="button small" style="margin-right:auto" onClick="window.close();">Close</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+				</div>
+			</div>
+		
 			<!-- Login -->
 			<div id="saved" class="modalDialog">
 				<div>
@@ -46,43 +91,36 @@
 
 					<!-- Logo -->
 						<h1><a href="product_sale_login.html" id="logo">Pro Investment</a></h1>
-						<div style="padding-left: 1000px">Hello, David.  <a href="index.html" class="button small" style="margin-right:auto">Logout</a></div>
+						<div style="padding-left: 1000px"><a href="login.html" class="button small" style="margin-right:auto"">Login</a>|<a href="user_signup_createAccount.html" class="button small" style="margin-right:auto" onClick="window.close();">Sign Up</a></div>
 					<!-- Nav -->
 						<nav id="nav">
 							<ul>
-								<!--<li><a href="index_login.html">Home</a></li>-->
+								<li><a href="index.html">Home</a></li>
 								<li>
 									<a href="#">Offerings</a>
 									<ul>
-										<li><a href="product_sale_login.html">Current Offerings</a></li>										
-										<li><a href="product_off_login.html">Funded Offerings</a></li>
-										<li><a href="product_coming_login.html">Coming soon</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">News & Updates</a>
-									<ul>
-										<li><a href="news_updates_login.html">News & Update</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">My Investment</a>
-									<ul>
-										<li><a href="invest_overview.html">Overview</a></li>
-										<li><a href="invest_performance.html">Performance</a></li>
-										<li><a href="invest_portfolio.html">Portfolio</a></li>
-										<li><a href="invest_transation.html">Transaction</a></li>
-										<li><a href="invest_documents.html">Documents</a></li>
+										<li><a href="product_sale.html">Current Offerings</a></li>										
+										<li><a href="product_off.html">Funded Offerings</a></li>
+										<li><a href="product_coming.html">Coming soon</a></li>
+										<!--<li>
+											<a href="#">Submenu</a>
+											<ul>
+												<li><a href="#">Lorem dolor</a></li>
+												<li><a href="#">Phasellus magna</a></li>
+												<li><a href="#">Magna phasellus</a></li>
+												<li><a href="#">Etiam nisl</a></li>
+												<li><a href="#">Veroeros feugiat</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Veroeros feugiat</a></li>-->
 									</ul>
 								</li>
 								<li class="current">
-									<a href="#">My Profile</a>
+									<a href="#">News & Updates</a>
 									<ul>
-										<li><a href="#">My Profile</a></li>
-										<li><a href="user_preferences.html">My Preferences</a></li>
+										<li><a href="news_updates.html">News & Update</a></li>
 									</ul>
 								</li>
-								<!--<li><a href="#">Data Analysis</a></li>-->
 								
 							</ul>							
 						</nav>						
@@ -92,7 +130,7 @@
 				<!--<section id="banner">
 					<header>
 						<!--<h2><em>If you already have account <a href="#" class="button">Login</a> No?<a href="http://html5up.net">Sign up</a></em></h2>-->
-					<!--</header>
+				<!--	</header>
 				</section>
 
 			<!-- Highlights 
@@ -128,7 +166,7 @@
 				<section class="wrapper style2">
 					<div class="container">
 						<header class="major">
-							<h2>My Profile</h2>
+							<h2>News & Updates</h2>
 							<!--<p>With a much smaller subtitle hanging out just below it</p>-->
 						</header>
 					</div>
@@ -136,17 +174,19 @@
 
 			<!-- Posts -->
 				<section class="wrapper style1">
-					<div class="container">
+					<div class="container" style="display:" id="newsDiv">
 						<div class="row">
 							<section class="col-12 col-12-narrower">
 								<div class="inner">
-									<div class="table100 ver5 m-b-110">
+									<h3>News</h3>
+									<div class="table100 ver1 m-b-110">
 										<div class="table100-head">
 											<table>
 												<thead>
 													<tr class="row100 head">
-														<th class="cell100 column1">You can update your profile.</th>
-														
+														<th class="cell100 column6">Date</th>
+														<th class="cell100 column8">Key Word</th>
+														<th class="cell100 column1">News</th>
 													</tr>
 												</thead>
 											</table>
@@ -156,80 +196,14 @@
 											<table>
 												<tbody>
 													<tr class="row100 body">
-														<td class="cell100 column1" style="width:12%">First Name</td>
-														<td class="cell100 column3"><input size=15></td>
-														<td class="cell100 column1" style="width:12%">Last Name</td>
-														<td class="cell100 column3"><input size=15></td>
-														<td class="cell100 column1" style="width:15%; padding-left:20px">Primary Phone</td>
-														<td class="cell100 column3"><input size=15></td>
+														<td class="cell100 column6">07/03/2017</td>
+														<td class="cell100 column8">Region, Texas</td>
+														<td class="cell100 column1"><a href="">aaaaaaaaaaaaaaaaaaaaaakkkkkkk</a></td>
 													</tr>
-													<tr class="row100 body">													
-														<td class="cell100 column1" style="width:12%">Address</td>
-														<td class="cell100 column3" colspan=3 style="width:35%"><input size=50></td>
-														<td class="cell100 column1" style="width:15%; padding-left:20px">City</td>
-														<td class="cell100 column3"><input size=12></td>
-																												
-													</tr>
-													<tr class="row100 body">
-														<td class="cell100 column1" style="width:12%">State</td>
-														<td class="cell100 column3" >
-															<select length=10>
-																<option>Alaska</option>
-																<option>Califonia</option>
-																<option>Texas</option>
-															</select>
-														</td>
-														<td class="cell100 column1" style="width:12%">Country</td>
-														<td class="cell100 column3" style="width:8%">
-															<select length=10>
-																<option>China</option>
-																<option>United Kindom</option>
-																<option>United States</option>
-															</select>
-														</td>
-														<td class="cell100 column1" style="width:15%; padding-left:20px">Postal Code</td>
-														<td class="cell100 column3" style="width:6%"><input size="10"></td>
-													</tr>
-
 												</tbody>
 											</table>
 										</div>
-										
-										<div style="padding-left:500px"><a href="#" class="button small">SAVE</a><div>
 									</div>
-								</div>
-							</section>						
-						</div>
-						
-						
-						<!--<div class="row">
-							<section class="col-6 col-12-narrower">
-								<div class="box post">
-									<a href="#" class="image left"><img src="images/pj3.jpg" alt="" /></a>
-									<div class="inner">
-										<h3>Z Apartment</h3>
-										<p>
-											Value-add project<br>
-											8% Return<br>
-											5 Years	
-										</p>
-									</div>
-								</div>
-							</section>
-							<section class="col-6 col-12-narrower">
-								<div class="box post">
-									<a href="#" class="image left"><img src="images/pj4.jpg" alt="" /></a>
-									<div class="inner">
-										<h3>A Apartment</h3>
-										<p>
-											Value-add project<br>
-											8% Return<br>
-											5 Years	
-										</p>
-									</div>
-								</div>
-							</section>
-						</div>-->
 					</div>
 				</section>
 
