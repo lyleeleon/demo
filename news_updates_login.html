@@ -127,16 +127,17 @@
 							<!--<p>With a much smaller subtitle hanging out just below it</p>-->
 						</header>
 					</div>
+					<div style="padding-left: 1000px"><button class="button small" id="newsBtn" style="" value="1" onclick="if(this.value==0){this.value=1; this.style=''; document.getElementById('updatesBtn').value=0; document.getElementById('updatesBtn').style='background-color:grey'; document.getElementById('newsDiv').style='display:'; document.getElementById('updatesDiv').style='display:none'}">News</button>|<button class="button small" id="updatesBtn" style="background-color:grey" value="0" onclick="if(this.value==0){this.value=1; this.style=''; document.getElementById('newsBtn').value=0; document.getElementById('newsBtn').style='background-color:grey'; document.getElementById('updatesDiv').style='display:'; document.getElementById('newsDiv').style='display:none'}">Updates</button></div>
 				</section>
 
-				<div style="padding-left: 1000px"><button class="button small" id="newsBtn" style="" value="1">News</button>|<button class="button small" id="updatesBtn" style="background-color:grey" value="0">Updates</button></div>
+				
 				
 			<!-- Posts -->
 				<section class="wrapper style1">
-					<div class="container" style="display:" id="newsDiv">
+					<div class="container">
 						<div class="row">
 							<section class="col-12 col-12-narrower">
-								<div class="inner">
+								<div class="inner" style="display:" id="newsDiv">
 									<h3>News</h3>
 									<div class="table100 ver1 m-b-110">
 										<div class="table100-head">
@@ -159,31 +160,36 @@
 														<td class="cell100 column8">Region, Texas</td>
 														<td class="cell100 column1"><a href="">aaaaaaaaaaaaaaaaaaaaaakkkkkkk</a></td>
 													</tr>
+													<tr class="row100 body">
+														<td class="cell100 column6">04/03/2017</td>
+														<td class="cell100 column8">Region, Texas</td>
+														<td class="cell100 column1"><a href="">bbbbbbbbbbbbbbbbbbbbb</a></td>
+													</tr>
+													<tr class="row100 body">
+														<td class="cell100 column6">01/03/2017</td>
+														<td class="cell100 column8">Region, Texas</td>
+														<td class="cell100 column1"><a href="">cccccccccccccccccccccccccc</a></td>
+													</tr>
+													<tr class="row100 body">
+														<td class="cell100 column6">10/03/2016</td>
+														<td class="cell100 column8">Region, Texas</td>
+														<td class="cell100 column1"><a href="">aaaaaaaaaaaaaaaaaaaaaakkkkkkk</a></td>
+													</tr>
 												</tbody>
 											</table>
 										</div>
 									</div>
-					</div>
-				</section>
-				
-				
-				<section class="wrapper style1">
-					<div class="container" style="display:none" id="updatesDiv">
-						<div class="row">
-							<section class="col-12 col-12-narrower">
-								<div class="inner">
+								</div>
+								<div class="inner" style="display:none" id="updatesDiv">
 									<h3>Updates</h3>
 									<div class="table100 ver1 m-b-110">
 										<div class="table100-head">
 											<table>
 												<thead>
 													<tr class="row100 head">
-														<th class="cell100 column6">Name</th>
-														<th class="cell100 column8">Start Value</th>
-														<th class="cell100 column8">Start</th>
-														<th class="cell100 column8">End</th>
-														<th class="cell100 column8">End Value</th>
-														<th class="cell100 column8">Equity Multiple</th>
+														<th class="cell100 column6">Date</th>
+														<th class="cell100 column8">Offering</th>
+														<th class="cell100 column1">News</th>
 													</tr>
 												</thead>
 											</table>
@@ -193,19 +199,30 @@
 											<table>
 												<tbody>
 													<tr class="row100 body">
-														<td class="cell100 column6"><a href="product_detail_login.html">SA Apartment</a></td>
-														<td class="cell100 column8">$100,000</td>
-														<td class="cell100 column8">07/03/2017</td>
-														<td class="cell100 column8">07/02/2022</td>
-														<td class="cell100 column8">$210,000</td>
-														<td class="cell100 column8">2.1x</td>
+														<td class="cell100 column6">07/03/2017</td>
+														<td class="cell100 column8">Austin Apartment</td>
+														<td class="cell100 column1"><a href="">aaaaabbbbbbbbbdcccccccdd.doc</a></td>
+													</tr>
+													<tr class="row100 body">
+														<td class="cell100 column6">04/03/2017</td>
+														<td class="cell100 column8">Houston Apartment</td>
+														<td class="cell100 column1"><a href="">aaaaabbbbbbbbbdcccccccdd.doc</a></td>
+													</tr>
+													<tr class="row100 body">
+														<td class="cell100 column6">01/03/2017</td>
+														<td class="cell100 column8">Dallas Apartment</td>
+														<td class="cell100 column1"><a href="">aaaaabbbbbbbbbdccddddddddcdd.doc</a></td>
 													</tr>
 												</tbody>
 											</table>
 										</div>
 									</div>
+								</div>
+							</section>
+						</div>
 					</div>
 				</section>
+				
 
 			<!-- CTA 
 				<section id="cta" class="wrapper style3">
